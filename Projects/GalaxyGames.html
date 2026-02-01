@@ -309,7 +309,7 @@
             font-size: 14px;
             margin-top: 60px;
         }
-
+    
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -339,66 +339,55 @@
                 justify-content: center;
             }
         }
-
-            .projects-section {
-                 margin-top: 60px;
+            .thread {
+                max-width: 900px;
+                margin: 60px auto;
         }
 
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 20px;
-                color: #e6edf3;
+            .thread h1 {
+                font-size: 2rem;
+                margin-bottom: 6px;
+                color: #58a6ff;
         }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
+            .thread-meta {
+                font-size: 0.9rem;
+                color: #8b949e;
+        }
 
-.project-card {
-  background: #161b22;
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  overflow: hidden;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
+            .thread-post {
+                margin-top: 24px;
+                padding: 20px;
+                background: #161b22;
+                border: 1px solid #30363d;
+                border-radius: 8px;
+                transition: box-shadow 0.3s ease;
+        }
 
-.project-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
+            .thread-post h3 {
+                margin-top: 0;
+                color: #f78166;
+        }
 
-.project-info {
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
+            .thread-post p {
+                color: #c9d1d9;
+                line-height: 1.5;
+        }
 
-.project-info h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #58a6ff;
-  margin: 0;
-}
+            .thread-post a.project-link {
+                color: #58a6ff;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.2s ease;
+        }
 
-.project-date {
-  font-size: 0.85rem;
-  color: #8b949e;
-}
+            .thread-post a.project-link:hover {
+                color: #a371f7;
+        }
 
-/* Hover animation */
-.project-card:hover {
-  border-color: #58a6ff;
-  box-shadow: 0 0 20px rgba(88, 166, 255, 0.2),
-              0 0 28px rgba(138, 43, 226, 0.15);
-  transform: translateY(-4px);
-}
+            .feature-box p {
+                margin: 6px 0;
+        }
 
     </style>
 </head>
@@ -442,25 +431,99 @@
         </header>
 
         <div class="tabs">
-            <a href="index.html" class="tab">Overview</a>
-            <a href="repositories.html" class="tab">Repositories</a>
-            <a href="projects.html" class="tab active">Projects</a>
-            <a href="about-me.html" class="tab">About Me</a>
+            <a href="/index.html" class="tab">Overview</a>
+            <a href="/repositories.html" class="tab">Repositories</a>
+            <a href="/projects.html" class="tab active">Projects</a>
+            <a href="/about-me.html" class="tab">About Me</a>
         </div>
 
-        <section class="projects-section">
+<section class="thread">
+  <h1>Galaxy Games – Unblocked Games Hub</h1>
+  <span class="thread-meta">V1.1 Public Release • Latest: Nov 16, 2025</span>
 
+  <div class="thread-post">
+    <h3>Overview</h3>
+    <p>
+      Galaxy Games is a fast, clean, and constantly-updated unblocked games site built for students, schools,
+      and anyone who needs safe access to browser-based HTML5 games. The hub runs entirely from local game files
+      instead of embedding from external CDNs. Deploy it anywhere, customize it easily, and keep your access unblocked.
+    </p>
+    <p>
+      Website: <a href="https://galaxygames.site/" target="_blank" class="project-link">galaxygames.site</a>
+    </p>
+  </div>
 
-  <div class="projects-grid">
-    <a href="Projects/GalaxyGames.html" class="project-card">
-      <img src="https://i.postimg.cc/9QYw2r07/image.png" alt="Project Preview">
-      <div class="project-info">
-        <h3>Galaxy Games</h3>
-        <span class="project-date">Published: 11/16/25</span>
-      </div>
-    </a>
+  <div class="thread-post">
+    <h3>Features</h3>
+    <div class="feature-box">
+      <p><strong>Games:</strong> 100% unblocked HTML5, Flash, and emulator games</p>
+      <p><strong>Interface:</strong> Fast, lightweight, and desktop responsive</p>
+      <p><strong>Network Access:</strong> Works on school networks</p>
+      <p><strong>Deployment:</strong> One-click deploy to Netlify, Vercel, Cloudflare Pages, or GitHub Pages</p>
+      <p><strong>Customization:</strong> Easily add new games and update the list</p>
+      <p><strong>License:</strong> GPL-2.0 Open Source</p>
+    </div>
+  </div>
+
+  <div class="thread-post">
+    <h3>Quick Actions</h3>
+    <p><a href="https://app.netlify.com/start/deploy?repository=yourrepo" target="_blank" class="project-link">Deploy on Netlify</a></p>
+    <p><a href="https://github.com/AirgPlays/Galaxy-Games" target="_blank" class="project-link">View Repository</a></p>
+    <p><a href="https://github.com/AirgPlays/Galaxy-Games/releases/tag/Release" class="project-link">Download ZIP</a></p>
+  </div>
+
+  <div class="thread-post">
+    <h3>Manual Deployment</h3>
+    <p>
+      If you don’t want to use the Netlify button:
+    </p>
+    <p>
+      1. Fork or download the repository.<br>
+      2. Upload it to any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages).<br>
+      3. Wait for deployment to finish.<br>
+      4. Your unblocked game site is live.
+    </p>
+    <p>
+      To add new games: place the game folder inside <code>games-files/</code>, add its icon inside <code>Images/</code>,
+      and update your game list in <code>games/</code>.
+    </p>
+  </div>
+
+  <div class="thread-post">
+    <h3>Bypass Tips</h3>
+    <p>
+      Galaxy Games works best on domains that schools rarely block: Netlify subdomains, Vercel subdomains,
+      Cloudflare Pages, GitHub Pages. Use multiple mirrors if needed to maximize uptime.
+    </p>
+  </div>
+
+  <div class="thread-post">
+    <h3>Contributing</h3>
+    <p>
+      Pull requests are welcome! You can add new games, improve the UI, or optimize scripts.
+    </p>
+  </div>
+
+  <div class="thread-post">
+    <h3>Languages Used</h3>
+    <p>JavaScript: 66% | HTML: 32.5% | C: 1.1% | Python: 0.3% | CSS: 0.1% | Batchfile: 0%</p>
+  </div>
+
+  <div class="thread-post">
+    <h3>License</h3>
+    <p>
+      This project is licensed under the GPL-2.0 License. You are free to modify, redistribute, and improve it under its terms.
+    </p>
+  </div>
+
+  <div class="thread-post">
+    <h3>Support</h3>
+    <p>
+      If this project helped you, consider starring the repository to support future updates.
+    </p>
   </div>
 </section>
+
 
 
         <footer>
